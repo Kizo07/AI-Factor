@@ -1,0 +1,44 @@
+# Data Sources Configuration
+# API keys and endpoints for data fetching
+
+# Yahoo Finance (yfinance) - No key required
+yahoo_finance:
+  enabled: true
+  rate_limit_calls: 1800  # calls per hour (yfinance limit)
+  rate_limit_pause: 60  # seconds to pause after limit
+
+# FRED (Federal Reserve Economic Data) - API key optional but recommended
+# Get free key at: https://research.stlouisfed.org/user/accounts/apikey
+fred:
+  enabled: true
+  api_key: ${FRED_API_KEY}  # Set in .env file
+  base_url: https://api.stlouisfed.org/fred
+
+# Fama-French Data Library - No key required (direct download)
+fama_french:
+  enabled: true
+  base_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp
+
+# Alpha Vantage (backup source) - API key required
+# Get free key at: https://www.alphavantage.co/support/#api-key
+alpha_vantage:
+  enabled: false  # Disabled by default, enable if needed
+  api_key: ${ALPHA_VANTAGE_API_KEY}
+  base_url: https://www.alphavantage.co
+  calls_per_day: 25  # Free tier limit
+  calls_per_minute: 5
+
+# IEX Cloud (paid backup source) - API key required
+# Get key at: https://iexcloud.io/
+iex_cloud:
+  enabled: false
+  api_key: ${IEX_API_KEY}
+  base_url: https://cloud.iexapis.com
+
+# Cache settings
+cache:
+  enabled: true
+  directory: data/cache
+  etf_returns_ttl: 86400  # 1 day in seconds
+  etf_aum_ttl: 604800     # 1 week in seconds
+  reference_ttl: 2592000   # 30 days in seconds

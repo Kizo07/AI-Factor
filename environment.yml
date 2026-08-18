@@ -1,0 +1,38 @@
+# AI Exposure Factor Suite - Conda Environment
+# Create with: conda env create -f environment.yml
+# Update with: conda env update -f environment.yml
+
+name: ai-factor
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python - use latest stable 3.x
+  - python>=3.10,<3.13
+
+  # Core data manipulation
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+
+  # Data storage
+  - pyarrow>=12.0.0
+
+  # Utilities
+  - python-dateutil>=2.8.0
+  - pyyaml>=6.0
+  - requests>=2.31.0
+
+  # Configuration
+  - pydantic>=2.0.0
+
+  # Testing
+  - pytest>=7.4.0
+  - pytest-cov>=4.1.0
+
+  # Pip packages (not available in conda or need specific version)
+  - pip
+  - pip:
+    - yfinance>=0.2.28
+    - pandas-datareader>=0.10.0
+    - pandas-market-calendars>=4.3.0

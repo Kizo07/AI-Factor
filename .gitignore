@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (cache, raw data)
+data/cache/
+data/raw/*.parquet
+data/raw/*.csv
+data/raw/*.feather
+data/raw/*.json
+
+# Environment variables
+.env
+
+# Outputs (keep structure, ignore content)
+data/factors/*.csv
+data/factors/*.parquet
+data/factors/*.feather
+data/diagnostics/*.csv
+data/diagnostics/*.feather
+data/processed/*.parquet
+data/processed/*.feather
+data/reference/*.csv
+data/reference/*.feather
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!notebooks/**/*.ipynb
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Mantine migration: frontend build artifacts
+dashboard/frontend/node_modules/
+dashboard/frontend/dist/
+*.tsbuildinfo
+
+# Exposure dataset outputs (contains the actual data — excluded from VCS)
+data/exposure/
+data/raw/etf_aum/
+data/raw/etf_returns/
+data/raw/sp500/

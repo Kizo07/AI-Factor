@@ -1,0 +1,29 @@
+# Semiconductor ETF Selection for AI Infrastructure Factor
+# This file specifies which semiconductor ETF to use as the AI Infra proxy
+
+# Primary Selection
+PRIMARY: SOXX
+
+# Reasoning for SOXX selection:
+# 1. Long history (inception 2001) - provides long return series
+# 2. High liquidity - largest semiconductor ETF by AUM
+# 3. Broad coverage - 30 largest US semiconductor companies
+# 4. Market-cap weighted - standard approach
+# 5. Reliable total return data available
+
+# Alternative for Robustness Testing
+ALTERNATIVE: SMH
+
+# Notes on SMH vs SOXX:
+# - SMH: 25 holdings, more concentrated
+# - SOXX: 30 holdings, slightly more diversified
+# - Both exclude foreign-domiciled chip companies
+# - Use SMH as robustness alternative to test if results depend on single ETF choice
+
+# Excluded Semiconductor ETFs:
+# - SOXL: 3x leveraged (excluded per spec)
+# - SOXS: Inverse (excluded per spec)
+# - Any leveraged or inverse semiconductor products
+
+# Last updated: 2024-06-20
+# Review date: Check semi ETF landscape annually
