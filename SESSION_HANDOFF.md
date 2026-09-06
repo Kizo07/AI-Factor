@@ -1,7 +1,7 @@
 # Session Handoff: AI Factor Suite
 
 **Date:** 2026-07-31 (end of day)
-**Project:** `/home/fire/Documents/AI-Factor`
+**Project:** `AI-Factor` (this repo root)
 **Status:** Part 1 complete (factors + notebooks). Phase 2 started (S&P 500
 exposure estimation + interactive dashboard).
 
@@ -46,7 +46,7 @@ Infra Play / Low Exposure (vs cross-sectional medians).
 ## 3. How to run
 
 ```bash
-cd /home/fire/Documents/AI-Factor
+cd AI-Factor  # repo root
 
 # Data pipeline
 .venv/bin/python -m src.main fetch --returns --no-cache   # refresh ETF returns
