@@ -17,7 +17,7 @@ export default function QuadrantCard({ title, count, examples, accent }: Quadran
       style={{
         borderTop: `3px solid ${accent}`,
         minHeight: 120,
-        background: dark ? 'rgba(15,23,42,0.4)' : 'rgba(241,245,249,0.6)',
+        background: dark ? 'rgba(7,19,29,0.4)' : 'rgba(229,240,248,0.6)',
       }}
     >
       <Text fw={700} size="sm" style={{ color: accent }}>

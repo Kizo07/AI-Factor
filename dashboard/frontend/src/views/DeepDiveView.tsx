@@ -295,7 +295,7 @@ export default function DeepDiveView({
                       xref: 'paper',
                       y0: -0.05,
                       y1: 0.05,
-                      fillcolor: 'rgba(148,163,184,0.08)',
+                      fillcolor: 'rgba(129,154,170,0.10)',
                       line: { width: 0 },
                     },
                     {
@@ -305,7 +305,7 @@ export default function DeepDiveView({
                       xref: 'paper',
                       y0: 0,
                       y1: 0,
-                      line: { color: 'rgba(148,163,184,0.5)' },
+                      line: { color: 'rgba(129,154,170,0.55)' },
                     },
                   ],
                 }}

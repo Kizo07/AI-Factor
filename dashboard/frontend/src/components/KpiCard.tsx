@@ -7,8 +7,9 @@ interface KpiCardProps {
   accent?: string;
 }
 
-// Metric card mirroring the Streamlit app's .kpi-card (accent left border).
-export default function KpiCard({ label, value, sub, accent = '#a78bfa' }: KpiCardProps) {
+// Metric card mirroring the Streamlit app's .kpi-card (accent left border),
+// recolored to Cyan Ledger surfaces; default accent is the site's ledger gold.
+export default function KpiCard({ label, value, sub, accent = 'var(--gold)' }: KpiCardProps) {
   const dark = useMantineColorScheme().colorScheme !== 'light';
   return (
     <Card
@@ -17,7 +18,7 @@ export default function KpiCard({ label, value, sub, accent = '#a78bfa' }: KpiCa
       style={{
         borderLeft: `3px solid ${accent}`,
         minHeight: 92,
-        background: dark ? 'linear-gradient(180deg, rgba(30,41,59,0.35), rgba(15,23,42,0.35))' : 'linear-gradient(180deg, rgba(241,245,249,0.6), rgba(255,255,255,0.5))',
+        background: dark ? 'linear-gradient(180deg, rgba(11,28,40,0.45), rgba(7,19,29,0.45))' : 'linear-gradient(180deg, rgba(229,240,248,0.6), rgba(255,255,255,0.5))',
       }}
     >
       <Text size="xs" tt="uppercase" c="dimmed" fw={600} lts="0.06em" mb={4}>

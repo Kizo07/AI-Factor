@@ -112,7 +112,7 @@ export default function DistributionsView({
                     y0: 0,
                     y1: 1,
                     yref: 'paper',
-                    line: { color: dark ? '#e2e8f0' : '#334155', dash: 'dash' },
+                    line: { color: dark ? '#edf7fc' : '#445e72', dash: 'dash' },
                   },
                   {
                     type: 'line',

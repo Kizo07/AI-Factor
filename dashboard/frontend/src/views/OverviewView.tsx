@@ -230,8 +230,8 @@ export default function OverviewView({
                   arrowsize: 0.6,
                   ax: 0,
                   ay: -22,
-                  font: { size: 10, color: dark ? '#e2e8f0' : '#334155' },
-                  arrowcolor: 'rgba(226,232,240,0.4)',
+                  font: { size: 10, color: dark ? '#edf7fc' : '#445e72' },
+                  arrowcolor: dark ? 'rgba(161,180,196,0.45)' : 'rgba(68,94,114,0.4)',
                 })),
                 ...cornerLabels(valid),
               ] as Plotly.Layout['annotations'],
@@ -274,6 +274,6 @@ function cornerLabels(valid: ExposureRow[]): Plotly.Layout['annotations'] {
   ].map((a) => ({
     ...a,
     showarrow: false,
-    font: { size: 10, color: 'rgba(148,163,184,0.55)' },
+    font: { size: 10, color: 'rgba(129,154,170,0.6)' },
   })) as Plotly.Layout['annotations'];
 }

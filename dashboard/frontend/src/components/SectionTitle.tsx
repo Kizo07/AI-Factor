@@ -8,7 +8,7 @@ export default function SectionTitle({ children }: { children: React.ReactNode }
       fw={650}
       mt="lg"
       mb="xs"
-      style={{ borderLeft: '3px solid #a78bfa', paddingLeft: 10 }}
+      style={{ borderLeft: '3px solid var(--gold)', paddingLeft: 10 }}
     >
       {children}
     </Text>

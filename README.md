@@ -101,6 +101,20 @@ the latest price date) is available alongside the FF5+UMD model. The
 default trailing-252-day window loads precomputed estimates instantly, and any
 custom period recomputes all ~500 regressions on the fly (≈3 s, cached).
 
+The new Mantine dashboard (FastAPI backend + React frontend in `dashboard/`):
+
+```bash
+.venv/bin/uvicorn dashboard.backend.app:app --host 127.0.0.1 --port 8000
+cd dashboard/frontend && npm run dev   # http://localhost:5173
+```
+
+It ships with the "Cyan Ledger" dark and light themes:
+
+| Midnight (dark) | Ice (light) |
+|---|---|
+| ![Overview — Cyan Ledger dark](docs/screenshots/overview-dark.png) | ![Overview — Cyan Ledger light](docs/screenshots/overview-light.png) |
+| ![Sector analysis — Cyan Ledger dark](docs/screenshots/sector-dark.png) | ![Sector analysis — Cyan Ledger light](docs/screenshots/sector-light.png) |
+
 ## Data Sources
 
 | Data | Source | Cost |

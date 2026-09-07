@@ -235,9 +235,6 @@ export default function App() {
 
       <AppShell.Navbar p="md">
         <AppShell.Section>
-          <Text fw={700} size="lg">
-            📡 AI Exposure Terminal
-          </Text>
           <Text size="xs" c="theme" tt="uppercase" fw={600} lts="0.08em" mb="sm">
             S&P 500 · Market-Implied AI Betas
           </Text>

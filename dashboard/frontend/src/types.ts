@@ -104,31 +104,34 @@ export const QUADRANT_ORDER = [
   'Low Exposure',
 ] as const;
 
+// Quadrant + chart colors: Cyan Ledger values (from Kizo07.github.io
+// fusion/cyan-ledger), chosen to stay legible on both midnight and ice
+// surfaces since plotly trace colors are scheme-blind.
 export const QUADRANT_COLORS: Record<string, string> = {
-  'AI Leader': '#a78bfa',
-  'Theme Play': '#22d3ee',
-  'Infra Play': '#f59e0b',
-  'Low Exposure': '#64748b',
+  'AI Leader': '#3fbfae',
+  'Theme Play': '#08bfff',
+  'Infra Play': '#cf9440',
+  'Low Exposure': '#819aaa',
 };
 
 export const SECTOR_PALETTE = [
-  '#22d3ee',
-  '#a78bfa',
-  '#f59e0b',
-  '#34d399',
-  '#f87171',
-  '#60a5fa',
-  '#f472b6',
-  '#facc15',
-  '#4ade80',
-  '#c084fc',
-  '#fb923c',
-  '#94a3b8',
+  '#08bfff',
+  '#e3ac55',
+  '#68dfcf',
+  '#f58ba4',
+  '#a0e8ff',
+  '#cf9440',
+  '#3fbfae',
+  '#e66785',
+  '#6bdbff',
+  '#8f621f',
+  '#137665',
+  '#819aaa',
 ];
 
-export const C_THEME = '#22d3ee';
-export const C_INFRA = '#f59e0b';
-export const C_ACCENT = '#a78bfa';
-export const C_GREEN = '#34d399';
-export const C_RED = '#f87171';
-export const C_GRAY = '#64748b';
+export const C_THEME = '#08bfff';
+export const C_INFRA = '#cf9440';
+export const C_ACCENT = '#3fbfae';
+export const C_GREEN = '#3fbfae';
+export const C_RED = '#e66785';
+export const C_GRAY = '#819aaa';

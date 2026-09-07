@@ -123,7 +123,7 @@ export default function LeaderboardsView({
                   height={640}
                   layout={{
                     showlegend: false,
-                    xaxis: { zeroline: true, zerolinecolor: 'rgba(148,163,184,0.5)' },
+                    xaxis: { zeroline: true, zerolinecolor: 'rgba(129,154,170,0.55)' },
                     yaxis: { automargin: true },
                   }}
                 />

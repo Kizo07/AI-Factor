@@ -25,8 +25,8 @@ interface PlotProps {
   config?: Partial<Plotly.Config>;
 }
 
-// One Plotly template used by every chart — mirrors the Streamlit app's
-// AI_TEMPLATE (transparent backgrounds, slate grid, horizontal legend).
+// One Plotly template used by every chart — Cyan Ledger chrome (transparent
+// backgrounds, cyan-tinted grid from the --line tokens, horizontal legend).
 export default function PlotChart({ data, layout, height = 480, config }: PlotProps) {
   const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
@@ -36,20 +36,20 @@ export default function PlotChart({ data, layout, height = 480, config }: PlotPr
       paper_bgcolor: 'rgba(0,0,0,0)',
       plot_bgcolor: 'rgba(0,0,0,0)',
       font: {
-        color: dark ? '#cbd5e1' : '#334155',
-        family: "Inter, 'Segoe UI', sans-serif",
+        color: dark ? '#a1b4c4' : '#445e72',
+        family: "'Inter', system-ui, sans-serif",
         size: 13,
       },
       colorway: SECTOR_PALETTE,
       xaxis: {
-        gridcolor: dark ? 'rgba(148,163,184,0.12)' : 'rgba(100,116,139,0.15)',
-        zerolinecolor: dark ? 'rgba(148,163,184,0.35)' : 'rgba(100,116,139,0.35)',
-        linecolor: dark ? 'rgba(148,163,184,0.25)' : 'rgba(100,116,139,0.25)',
+        gridcolor: dark ? 'rgba(86,183,229,0.12)' : 'rgba(17,93,133,0.12)',
+        zerolinecolor: dark ? 'rgba(86,183,229,0.25)' : 'rgba(17,93,133,0.25)',
+        linecolor: dark ? 'rgba(86,183,229,0.34)' : 'rgba(17,93,133,0.32)',
       },
       yaxis: {
-        gridcolor: dark ? 'rgba(148,163,184,0.12)' : 'rgba(100,116,139,0.15)',
-        zerolinecolor: dark ? 'rgba(148,163,184,0.35)' : 'rgba(100,116,139,0.35)',
-        linecolor: dark ? 'rgba(148,163,184,0.25)' : 'rgba(100,116,139,0.25)',
+        gridcolor: dark ? 'rgba(86,183,229,0.12)' : 'rgba(17,93,133,0.12)',
+        zerolinecolor: dark ? 'rgba(86,183,229,0.25)' : 'rgba(17,93,133,0.25)',
+        linecolor: dark ? 'rgba(86,183,229,0.34)' : 'rgba(17,93,133,0.32)',
       },
       legend: {
         bgcolor: 'rgba(0,0,0,0)',
